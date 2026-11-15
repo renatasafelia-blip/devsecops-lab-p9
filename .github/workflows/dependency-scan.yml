@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   dependency-scan:
     name: Scan Dependencies
